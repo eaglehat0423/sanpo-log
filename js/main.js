@@ -19,8 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
         title.textContent = walk.title;
         title.className = "card-title";
 
+        const date = document.createElement("div");
+        date.textContent = walk.date;
+        date.className = "card-date";
+
         link.appendChild(img);
         link.appendChild(title);
+        link.appendChild(date);
         li.appendChild(link);
         list.appendChild(li);
       });

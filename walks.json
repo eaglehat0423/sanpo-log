@@ -1,8 +1,14 @@
 [
-  { "title": "ゆりかもめウォーキング", 
+    { 
+    "title": "ゆりかもめウォーキング", 
     "file": "walk1.html",
-    "thumbnail": "images/walk1.png"},
-    { "title": "ゆりかもめウォーキング", 
+    "thumbnail": "images/walk1.png",
+    "date": "2025-05-05"
+    },
+    { 
+    "title": "ゆりかもめウォーキング", 
     "file": "walk1.html",
-    "thumbnail": "images/walk1.png"}
+    "thumbnail": "images/walk1.png",
+    "date": "2025-05-05"
+    }
 ]
