@@ -38,3 +38,63 @@
   display: block;
   color: inherit;
 }
+
+/* ベースカードレイアウト（PC） */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;            /* 表示エリアの高さは固定 */
+  object-fit: contain;      /* 引き伸ばさず全体を収める */
+  background-color: #eef3f7; /* 足りない余白部分に背景色 */
+  display: block;
+}
+
+
+.card-title {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f9fbff;
+  color: #2a4d69;
+}
+
+.card a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+/* 📱 スマホ向け（画面幅600px以下） */
+@media (max-width: 600px) {
+    .card img {
+    height: 180px; /* スマホ時は少し高さを抑える */
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}
+
