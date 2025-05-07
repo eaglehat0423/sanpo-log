@@ -86,15 +86,26 @@
   color: inherit;
 }
 
-/* 📱 スマホ向け（画面幅600px以下） */
-@media (min-width: 600px) {
-    .card img {
-    height: 180px; /* スマホ時は少し高さを抑える */
+/* スマホ向け（画面幅600px以下） */
+@media (max-width: 600px) {
+  .card {
+    height: 360px; /* 縦長に固定（調整可） */
+  }
+
+  .card img {
+    height: 60%; /* 上部に画像を大きく表示 */
+    object-fit: contain;
+    background-color: #eef3f7;
   }
 
   .card-title {
+    height: 40%;
+    padding: 1.2rem;
     font-size: 1.1rem;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
