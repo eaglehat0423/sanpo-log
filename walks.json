@@ -1,3 +1,5 @@
 [
-  { "title": "ゆりかもめウォーキング", "file": "walk1.html" }
+  { "title": "ゆりかもめウォーキング", 
+    "file": "walk1.html",
+    "thumbnail": "images/walk1.png"}
 ]
